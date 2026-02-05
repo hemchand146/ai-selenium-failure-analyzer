@@ -88,20 +88,19 @@ AI_Selenium/
   📄 JSON-based configuration
   🤖 OpenAI-compatible LLM (via API)
 
+
 ## ▶️ Usage
-Run the test suite:
+## Run the test suite using a suite configuration file:
 ```bash
-python run.py
+python run.py TestData/test_suite.json
 ```
+You will get the automation_results.json    Which is the input for the Analyser.
 
 ## Run AI failure analysis (post-execution):
 ```bash
 python -m AI.summarize_failures
 ```
 
-## Run the test suite using a suite configuration file:
-```bash
-python run.py TestData/test_suite.json
-```
+
 
 
