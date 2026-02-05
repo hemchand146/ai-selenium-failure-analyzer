@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-02-05T06:58:09.644895+00:00",
+  "input_json": "TestData/test_suite.json",
+  "suite_id": "test_suite",
+  "tests": [
+    {
+      "test_name": "test_login",
+      "status": "FAIL",
+      "log_file": "Logs\\test_login.log"
+    },
+    {
+      "test_name": "test_add_employee",
+      "status": "FAIL",
+      "log_file": "Logs\\test_add_employee.log"
+    },
+    {
+      "test_name": "test_directory_search",
+      "status": "FAIL",
+      "log_file": "Logs\\test_directory_search.log"
+    },
+    {
+      "test_name": "test_candidates_search",
+      "status": "FAIL",
+      "log_file": "Logs\\test_candidates_search.log"
+    },
+    {
+      "test_name": "test_claim",
+      "status": "FAIL",
+      "log_file": "Logs\\test_claim.log"
+    }
+  ]
+}

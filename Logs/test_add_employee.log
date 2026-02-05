@@ -1,0 +1,46 @@
+[2026-02-05 12:25:33] ✓ ================================================================================
+[2026-02-05 12:25:33] ✓ TEST EXECUTION STARTED
+[2026-02-05 12:25:33] ✓ ================================================================================
+[2026-02-05 12:25:33] ✓ Date: 2026-02-05
+[2026-02-05 12:25:33] ✓ Time: 12:25:33
+[2026-02-05 12:25:33] ✓ ================================================================================
+[2026-02-05 12:25:33] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:25:33] ✓ TEST: TEST_ADD_EMPLOYEE
+[2026-02-05 12:25:33] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:25:33] ✓ Loading test module: Testcases.test_add_employee
+[2026-02-05 12:25:33] ✓ ✓ Test class loaded successfully
+[2026-02-05 12:25:33] ✓ Executing setup phase...
+[2026-02-05 12:25:33] ✓ Test setup started
+[2026-02-05 12:25:40] ✓ Waiting for page to reach stable state
+[2026-02-05 12:25:42] ✓ Page load completed
+[2026-02-05 12:25:42] ✓ Login successful
+[2026-02-05 12:25:42] ✓ ✓ Setup completed successfully
+[2026-02-05 12:25:42] ✓ Executing test phase...
+[2026-02-05 12:25:47] ✓ Waiting for page to reach stable state
+[2026-02-05 12:25:47] ✓ Page load completed
+[2026-02-05 12:25:49] ✓ Waiting for page to reach stable state
+[2026-02-05 12:25:49] ✓ Page load completed
+[2026-02-05 12:25:58] ✓ First Name: John
+[2026-02-05 12:25:58] ✓ Middle Name: A
+[2026-02-05 12:25:58] ✓ Last Name: Doe
+[2026-02-05 12:26:06] ✓ Employee ID: 9999
+[2026-02-05 12:26:13] ✓ Login Username: john.doe01
+[2026-02-05 12:26:21] ✗ ERROR: Test execution failed: Error with login credentials: Employee Id already exists
+[2026-02-05 12:26:21] ✗ ERROR: ================================================================================
+[2026-02-05 12:26:21] ✗ ERROR: TEST FAILED ✗
+[2026-02-05 12:26:21] ✗ ERROR: ================================================================================
+[2026-02-05 12:26:21] ✗ ERROR: Error Type: Exception
+[2026-02-05 12:26:21] ✗ ERROR: Error Message: Error with login credentials: Employee Id already exists
+[2026-02-05 12:26:22] ✗ ERROR: Screenshot captured: Logs\screenshots\test_add_employee_failure_20260205_122621.png
+[2026-02-05 12:26:22] ✗ ERROR: Stack Trace:
+[2026-02-05 12:26:22] ✗ ERROR: Traceback (most recent call last):
+  File "F:\AI_Selenium\run.py", line 77, in execute_test
+    test.run()
+  File "F:\AI_Selenium\Testcases\test_add_employee.py", line 89, in run
+    raise Exception(f"Error with login credentials: {error}")
+Exception: Error with login credentials: Employee Id already exists
+
+[2026-02-05 12:26:22] ✓ Executing teardown phase...
+[2026-02-05 12:26:22] ✓ Teardown started
+[2026-02-05 12:26:22] ✓ Test failed - keeping browser open for debugging
+[2026-02-05 12:26:22] ✓ ✓ Teardown completed

@@ -1,0 +1,100 @@
+=============== AI FAILURE SUMMARY ===============
+
+Total Failed Tests: 5
+
+-------------------------------------------------------
+[1] TEST_NAME : test_login
+FAILURE       : Login failed due to an exception raised during the test execution phase.
+
+POSSIBLE ISSUES:
+ - Incorrect login credentials
+ - Login page not loaded correctly
+ - User account is locked or inactive
+
+WHAT TO CHECK FIRST:
+ - Verify the login credentials used in the test
+ - Check if the login page is accessible and loads properly
+ - Ensure the user account is active and not locked
+
+POSSIBLE FIXES:
+ - Update the test with valid login credentials
+ - Add explicit waits to ensure the login page is fully loaded before attempting to log in
+ - Check user account status and unlock if necessary
+
+-------------------------------------------------------
+[2] TEST_NAME : test_add_employee
+FAILURE       : Test execution failed due to an attempt to add an employee with an existing Employee ID.
+
+POSSIBLE ISSUES:
+ - Employee ID already exists in the system
+ - Test data not reset between test runs
+ - Incorrect handling of existing records in the test setup
+
+WHAT TO CHECK FIRST:
+ - Verify if Employee ID 9999 is already present in the database
+ - Check if the test data is being cleared after each test run
+ - Review the logic for handling duplicate Employee IDs in the test
+
+POSSIBLE FIXES:
+ - Use a unique Employee ID for each test run
+ - Implement a cleanup step to remove test data after execution
+ - Modify the test to handle existing Employee IDs gracefully
+
+-------------------------------------------------------
+[3] TEST_NAME : test_directory_search
+FAILURE       : Test execution failed due to a TimeoutException while waiting for an element to be clickable.
+
+POSSIBLE ISSUES:
+ - Element is not present on the page
+ - Element is present but not clickable due to overlay or other elements
+ - Page took too long to load or stabilize
+
+WHAT TO CHECK FIRST:
+ - Verify the locator used for the search button
+ - Check for any overlays or modals that may block the element
+ - Ensure the page is fully loaded before the click action
+
+POSSIBLE FIXES:
+ - Increase the timeout duration for waiting for the element to be clickable
+ - Add explicit waits or checks to ensure the element is interactable
+ - Review the page structure to ensure the element is not being obscured
+
+-------------------------------------------------------
+[4] TEST_NAME : test_candidates_search
+FAILURE       : Test execution failed due to an exception raised during the search process indicating no records were found.
+
+POSSIBLE ISSUES:
+ - Search criteria may be incorrect or too restrictive
+ - Data may not exist in the database
+ - Search functionality may be broken or not implemented correctly
+
+WHAT TO CHECK FIRST:
+ - Verify the search criteria used in the test
+ - Check the database to ensure relevant records exist
+ - Review the search functionality implementation for any issues
+
+POSSIBLE FIXES:
+ - Adjust the search criteria to match existing records
+ - Populate the database with test data
+ - Debug the search function to identify any underlying issues
+
+-------------------------------------------------------
+[5] TEST_NAME : test_claim
+FAILURE       : Test failed due to a TimeoutException while waiting for an element to become visible.
+
+POSSIBLE ISSUES:
+ - Element not present in the DOM
+ - Element is hidden or not interactable
+ - Incorrect locator used to find the element
+
+WHAT TO CHECK FIRST:
+ - Verify the locator used for the element
+ - Check if the element is present on the page
+ - Ensure the page has fully loaded before the element is accessed
+
+POSSIBLE FIXES:
+ - Increase the timeout duration for waiting for the element
+ - Use a different locator strategy to find the element
+ - Add explicit waits to ensure the element is interactable before performing actions
+
+=======================================================

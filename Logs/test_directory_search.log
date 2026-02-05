@@ -1,0 +1,116 @@
+[2026-02-05 12:26:22] ✓ ================================================================================
+[2026-02-05 12:26:22] ✓ TEST EXECUTION STARTED
+[2026-02-05 12:26:22] ✓ ================================================================================
+[2026-02-05 12:26:22] ✓ Date: 2026-02-05
+[2026-02-05 12:26:22] ✓ Time: 12:26:22
+[2026-02-05 12:26:22] ✓ ================================================================================
+[2026-02-05 12:26:22] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:26:22] ✓ TEST: TEST_DIRECTORY_SEARCH
+[2026-02-05 12:26:22] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:26:22] ✓ Loading test module: Testcases.test_directory_search
+[2026-02-05 12:26:22] ✓ ✓ Test class loaded successfully
+[2026-02-05 12:26:22] ✓ Executing setup phase...
+[2026-02-05 12:26:31] ✓ Waiting for page to reach stable state
+[2026-02-05 12:26:31] ✓ Page load completed
+[2026-02-05 12:26:31] ✓ ✓ Setup completed successfully
+[2026-02-05 12:26:31] ✓ Executing test phase...
+[2026-02-05 12:26:33] ✓ Waiting for page to reach stable state
+[2026-02-05 12:26:33] ✓ Page load completed
+[2026-02-05 12:26:36] ✓ Waiting for page to reach stable state
+[2026-02-05 12:26:36] ✓ Page load completed
+[2026-02-05 12:26:38] ✓ Waiting for page to reach stable state
+[2026-02-05 12:26:38] ✓ Page load completed
+[2026-02-05 12:26:40] ✓ Waiting for page to reach stable state
+[2026-02-05 12:26:40] ✓ Page load completed
+[2026-02-05 12:26:56] ✗ ERROR: Test execution failed: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff71ffaf3d5
+	0x7ff71ffaf430
+	0x7ff71fd510bd
+	0x7ff71fdac2fe
+	0x7ff71fdac60c
+	0x7ff71fdfd187
+	0x7ff71fdf9d08
+	0x7ff71fd9cb0c
+	0x7ff71fd9da53
+	0x7ff72028b470
+	0x7ff72028586d
+	0x7ff7202a621a
+	0x7ff71ffcb235
+	0x7ff71ffd3a5c
+	0x7ff71ffb8844
+	0x7ff71ffb89f6
+	0x7ff71ff9eb87
+	0x7ffccdede8d7
+	0x7ffccf18c53c
+
+[2026-02-05 12:26:56] ✗ ERROR: ================================================================================
+[2026-02-05 12:26:56] ✗ ERROR: TEST FAILED ✗
+[2026-02-05 12:26:56] ✗ ERROR: ================================================================================
+[2026-02-05 12:26:56] ✗ ERROR: Error Type: TimeoutException
+[2026-02-05 12:26:56] ✗ ERROR: Error Message: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff71ffaf3d5
+	0x7ff71ffaf430
+	0x7ff71fd510bd
+	0x7ff71fdac2fe
+	0x7ff71fdac60c
+	0x7ff71fdfd187
+	0x7ff71fdf9d08
+	0x7ff71fd9cb0c
+	0x7ff71fd9da53
+	0x7ff72028b470
+	0x7ff72028586d
+	0x7ff7202a621a
+	0x7ff71ffcb235
+	0x7ff71ffd3a5c
+	0x7ff71ffb8844
+	0x7ff71ffb89f6
+	0x7ff71ff9eb87
+	0x7ffccdede8d7
+	0x7ffccf18c53c
+
+[2026-02-05 12:26:56] ✗ ERROR: Screenshot captured: Logs\screenshots\test_directory_search_failure_20260205_122656.png
+[2026-02-05 12:26:56] ✗ ERROR: Stack Trace:
+[2026-02-05 12:26:56] ✗ ERROR: Traceback (most recent call last):
+  File "F:\AI_Selenium\run.py", line 77, in execute_test
+    test.run()
+  File "F:\AI_Selenium\Testcases\test_directory_search.py", line 62, in run
+    directory.click_search()
+  File "F:\AI_Selenium\Pages\Directory\directory_page.py", line 58, in click_search
+    btn = self.wait_for_element_clickable(search_button)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AI_Selenium\core\BasePage.py", line 43, in wait_for_element_clickable
+    return self.wait.until(EC.element_to_be_clickable(locator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemchandr\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\support\wait.py", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff71ffaf3d5
+	0x7ff71ffaf430
+	0x7ff71fd510bd
+	0x7ff71fdac2fe
+	0x7ff71fdac60c
+	0x7ff71fdfd187
+	0x7ff71fdf9d08
+	0x7ff71fd9cb0c
+	0x7ff71fd9da53
+	0x7ff72028b470
+	0x7ff72028586d
+	0x7ff7202a621a
+	0x7ff71ffcb235
+	0x7ff71ffd3a5c
+	0x7ff71ffb8844
+	0x7ff71ffb89f6
+	0x7ff71ff9eb87
+	0x7ffccdede8d7
+	0x7ffccf18c53c
+
+
+[2026-02-05 12:26:56] ✓ Executing teardown phase...
+[2026-02-05 12:26:56] ✓ Teardown started
+[2026-02-05 12:26:56] ✓ ✓ Teardown completed

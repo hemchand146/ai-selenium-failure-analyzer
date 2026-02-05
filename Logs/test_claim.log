@@ -1,0 +1,122 @@
+[2026-02-05 12:27:26] ✓ ================================================================================
+[2026-02-05 12:27:26] ✓ TEST EXECUTION STARTED
+[2026-02-05 12:27:26] ✓ ================================================================================
+[2026-02-05 12:27:26] ✓ Date: 2026-02-05
+[2026-02-05 12:27:26] ✓ Time: 12:27:26
+[2026-02-05 12:27:26] ✓ ================================================================================
+[2026-02-05 12:27:26] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:27:26] ✓ TEST: TEST_CLAIM
+[2026-02-05 12:27:26] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:27:26] ✓ Loading test module: Testcases.test_claim
+[2026-02-05 12:27:30] ✓ ✓ Test class loaded successfully
+[2026-02-05 12:27:30] ✓ Executing setup phase...
+[2026-02-05 12:27:30] ✓ Test setup started
+[2026-02-05 12:27:37] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:37] ✓ Page load completed
+[2026-02-05 12:27:37] ✓ Login successful
+[2026-02-05 12:27:37] ✓ ✓ Setup completed successfully
+[2026-02-05 12:27:37] ✓ Executing test phase...
+[2026-02-05 12:27:47] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:47] ✓ Page load completed
+[2026-02-05 12:27:48] ✓ Claim page loaded
+[2026-02-05 12:27:51] ✓ Selected event name: Accommodation
+[2026-02-05 12:27:51] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:51] ✓ Page load completed
+[2026-02-05 12:27:53] ✓ Selected status: Paid
+[2026-02-05 12:27:53] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:53] ✓ Page load completed
+[2026-02-05 12:28:09] ✗ ERROR: Error in test: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff71ffaf3d5
+	0x7ff71ffaf430
+	0x7ff71fd510bd
+	0x7ff71fdac2fe
+	0x7ff71fdac60c
+	0x7ff71fdfd187
+	0x7ff71fdf9d08
+	0x7ff71fd9cb0c
+	0x7ff71fd9da53
+	0x7ff72028b470
+	0x7ff72028586d
+	0x7ff7202a621a
+	0x7ff71ffcb235
+	0x7ff71ffd3a5c
+	0x7ff71ffb8844
+	0x7ff71ffb89f6
+	0x7ff71ff9eb87
+	0x7ffccdede8d7
+	0x7ffccf18c53c
+
+[2026-02-05 12:28:09] ✗ ERROR: ================================================================================
+[2026-02-05 12:28:09] ✗ ERROR: TEST FAILED ✗
+[2026-02-05 12:28:09] ✗ ERROR: ================================================================================
+[2026-02-05 12:28:09] ✗ ERROR: Error Type: TimeoutException
+[2026-02-05 12:28:09] ✗ ERROR: Error Message: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff71ffaf3d5
+	0x7ff71ffaf430
+	0x7ff71fd510bd
+	0x7ff71fdac2fe
+	0x7ff71fdac60c
+	0x7ff71fdfd187
+	0x7ff71fdf9d08
+	0x7ff71fd9cb0c
+	0x7ff71fd9da53
+	0x7ff72028b470
+	0x7ff72028586d
+	0x7ff7202a621a
+	0x7ff71ffcb235
+	0x7ff71ffd3a5c
+	0x7ff71ffb8844
+	0x7ff71ffb89f6
+	0x7ff71ff9eb87
+	0x7ffccdede8d7
+	0x7ffccf18c53c
+
+[2026-02-05 12:28:09] ✗ ERROR: Screenshot captured: Logs\screenshots\test_claim_failure_20260205_122809.png
+[2026-02-05 12:28:09] ✗ ERROR: Stack Trace:
+[2026-02-05 12:28:09] ✗ ERROR: Traceback (most recent call last):
+  File "F:\AI_Selenium\run.py", line 77, in execute_test
+    test.run()
+  File "F:\AI_Selenium\Testcases\test_claim.py", line 81, in run
+    self.claim.enter_from_date(from_date)
+  File "F:\AI_Selenium\Pages\Claim\claim_page.py", line 66, in enter_from_date
+    self.clear_and_send_keys(from_date_field, date)
+  File "F:\AI_Selenium\core\BasePage.py", line 72, in clear_and_send_keys
+    element = self.wait_for_element_visible(locator)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AI_Selenium\core\BasePage.py", line 37, in wait_for_element_visible
+    return self.wait.until(EC.visibility_of_element_located(locator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemchandr\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\support\wait.py", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff71ffaf3d5
+	0x7ff71ffaf430
+	0x7ff71fd510bd
+	0x7ff71fdac2fe
+	0x7ff71fdac60c
+	0x7ff71fdfd187
+	0x7ff71fdf9d08
+	0x7ff71fd9cb0c
+	0x7ff71fd9da53
+	0x7ff72028b470
+	0x7ff72028586d
+	0x7ff7202a621a
+	0x7ff71ffcb235
+	0x7ff71ffd3a5c
+	0x7ff71ffb8844
+	0x7ff71ffb89f6
+	0x7ff71ff9eb87
+	0x7ffccdede8d7
+	0x7ffccf18c53c
+
+
+[2026-02-05 12:28:09] ✓ Executing teardown phase...
+[2026-02-05 12:28:09] ✓ Teardown started
+[2026-02-05 12:28:09] ✓ Test failed - keeping browser open for debugging
+[2026-02-05 12:28:09] ✓ ✓ Teardown completed

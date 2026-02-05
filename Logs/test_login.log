@@ -1,0 +1,34 @@
+[2026-02-05 12:25:17] ✓ ================================================================================
+[2026-02-05 12:25:17] ✓ TEST EXECUTION STARTED
+[2026-02-05 12:25:17] ✓ ================================================================================
+[2026-02-05 12:25:17] ✓ Date: 2026-02-05
+[2026-02-05 12:25:17] ✓ Time: 12:25:17
+[2026-02-05 12:25:17] ✓ ================================================================================
+[2026-02-05 12:25:17] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:25:17] ✓ TEST: TEST_LOGIN
+[2026-02-05 12:25:17] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:25:17] ✓ Loading test module: Testcases.test_login
+[2026-02-05 12:25:17] ✓ ✓ Test class loaded successfully
+[2026-02-05 12:25:17] ✓ Executing setup phase...
+[2026-02-05 12:25:29] ✓ Waiting for page to reach stable state
+[2026-02-05 12:25:29] ✓ Page load completed
+[2026-02-05 12:25:29] ✓ ✓ Setup completed successfully
+[2026-02-05 12:25:29] ✓ Executing test phase...
+[2026-02-05 12:25:33] ✗ ERROR: ================================================================================
+[2026-02-05 12:25:33] ✗ ERROR: TEST FAILED ✗
+[2026-02-05 12:25:33] ✗ ERROR: ================================================================================
+[2026-02-05 12:25:33] ✗ ERROR: Error Type: Exception
+[2026-02-05 12:25:33] ✗ ERROR: Error Message: Login failed
+[2026-02-05 12:25:33] ✗ ERROR: Screenshot captured: Logs\screenshots\test_login_failure_20260205_122533.png
+[2026-02-05 12:25:33] ✗ ERROR: Stack Trace:
+[2026-02-05 12:25:33] ✗ ERROR: Traceback (most recent call last):
+  File "F:\AI_Selenium\run.py", line 77, in execute_test
+    test.run()
+  File "F:\AI_Selenium\Testcases\test_login.py", line 33, in run
+    raise Exception("Login failed")
+Exception: Login failed
+
+[2026-02-05 12:25:33] ✓ Executing teardown phase...
+[2026-02-05 12:25:33] ✓ Teardown started
+[2026-02-05 12:25:33] ✓ Test failed - keeping browser open for debugging
+[2026-02-05 12:25:33] ✓ ✓ Teardown completed

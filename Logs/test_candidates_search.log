@@ -1,0 +1,70 @@
+[2026-02-05 12:26:56] ✓ ================================================================================
+[2026-02-05 12:26:56] ✓ TEST EXECUTION STARTED
+[2026-02-05 12:26:56] ✓ ================================================================================
+[2026-02-05 12:26:56] ✓ Date: 2026-02-05
+[2026-02-05 12:26:56] ✓ Time: 12:26:56
+[2026-02-05 12:26:56] ✓ ================================================================================
+[2026-02-05 12:26:56] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:26:56] ✓ TEST: TEST_CANDIDATES_SEARCH
+[2026-02-05 12:26:56] ✓ --------------------------------------------------------------------------------
+[2026-02-05 12:26:56] ✓ Loading test module: Testcases.test_candidates_search
+[2026-02-05 12:26:56] ✓ ✓ Test class loaded successfully
+[2026-02-05 12:26:56] ✓ Executing setup phase...
+[2026-02-05 12:26:56] ✓ Test setup started
+[2026-02-05 12:27:03] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:03] ✓ Page load completed
+[2026-02-05 12:27:03] ✓ Login successful
+[2026-02-05 12:27:03] ✓ ✓ Setup completed successfully
+[2026-02-05 12:27:03] ✓ Executing test phase...
+[2026-02-05 12:27:10] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:10] ✓ Page load completed
+[2026-02-05 12:27:12] ✓ Job Title: Software Engineer
+[2026-02-05 12:27:14] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:14] ✓ Page load completed
+[2026-02-05 12:27:14] ✓ Vacancy: test
+[2026-02-05 12:27:16] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:16] ✓ Page load completed
+[2026-02-05 12:27:16] ✓ Hiring Manager: Rahul Patil
+[2026-02-05 12:27:18] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:18] ✓ Page load completed
+[2026-02-05 12:27:18] ✓ Status: Rejected
+[2026-02-05 12:27:20] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:20] ✓ Page load completed
+[2026-02-05 12:27:20] ✓ Keywords: python,java
+[2026-02-05 12:27:20] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:20] ✓ Page load completed
+[2026-02-05 12:27:20] ✓ Date From: 2025-01-01
+[2026-02-05 12:27:21] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:21] ✓ Page load completed
+[2026-02-05 12:27:21] ✓ Date To: 2026-02-04
+[2026-02-05 12:27:23] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:23] ✓ Page load completed
+[2026-02-05 12:27:23] ✓ Method of Application: Manual
+[2026-02-05 12:27:24] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:24] ✓ Page load completed
+[2026-02-05 12:27:25] ✓ Waiting for page to reach stable state
+[2026-02-05 12:27:25] ✓ Page load completed
+[2026-02-05 12:27:26] ✗ ERROR: Test execution failed: Error during search: Info
+No Records Found
+×
+[2026-02-05 12:27:26] ✗ ERROR: ================================================================================
+[2026-02-05 12:27:26] ✗ ERROR: TEST FAILED ✗
+[2026-02-05 12:27:26] ✗ ERROR: ================================================================================
+[2026-02-05 12:27:26] ✗ ERROR: Error Type: Exception
+[2026-02-05 12:27:26] ✗ ERROR: Error Message: Error during search: Info
+No Records Found
+×
+[2026-02-05 12:27:26] ✗ ERROR: Screenshot captured: Logs\screenshots\test_candidates_search_failure_20260205_122726.png
+[2026-02-05 12:27:26] ✗ ERROR: Stack Trace:
+[2026-02-05 12:27:26] ✗ ERROR: Traceback (most recent call last):
+  File "F:\AI_Selenium\run.py", line 77, in execute_test
+    test.run()
+  File "F:\AI_Selenium\Testcases\test_candidates_search.py", line 105, in run
+    raise Exception(f"Error during search: {error}")
+Exception: Error during search: Info
+No Records Found
+×
+
+[2026-02-05 12:27:26] ✓ Executing teardown phase...
+[2026-02-05 12:27:26] ✓ Teardown started
+[2026-02-05 12:27:26] ✓ ✓ Teardown completed

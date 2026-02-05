@@ -1,0 +1,6 @@
+{
+  "openrouter": {
+    "api_key": "YOUR-API-KEY-HERE",
+    "model": "openai/gpt-4o-mini"
+  }
+}

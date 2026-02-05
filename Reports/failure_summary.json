@@ -1,0 +1,122 @@
+[
+  {
+    "test_name": "test_login",
+    "failure_reason": "Login failed due to an exception raised during the test execution phase.",
+    "possible_issues": [
+      "Incorrect login credentials",
+      "Login page not loaded correctly",
+      "User account is locked or inactive"
+    ],
+    "what_to_check_first": [
+      "Verify the login credentials used in the test",
+      "Check if the login page is accessible and loads properly",
+      "Ensure the user account is active and not locked"
+    ],
+    "possible_fixes": [
+      "Update the test with valid login credentials",
+      "Add explicit waits to ensure the login page is fully loaded before attempting to log in",
+      "Check user account status and unlock if necessary"
+    ],
+    "_meta": {
+      "source": "openrouter",
+      "model": "openai/gpt-4o-mini",
+      "test_name": "test_login"
+    }
+  },
+  {
+    "test_name": "test_add_employee",
+    "failure_reason": "Test execution failed due to an attempt to add an employee with an existing Employee ID.",
+    "possible_issues": [
+      "Employee ID already exists in the system",
+      "Test data not reset between test runs",
+      "Incorrect handling of existing records in the test setup"
+    ],
+    "what_to_check_first": [
+      "Verify if Employee ID 9999 is already present in the database",
+      "Check if the test data is being cleared after each test run",
+      "Review the logic for handling duplicate Employee IDs in the test"
+    ],
+    "possible_fixes": [
+      "Use a unique Employee ID for each test run",
+      "Implement a cleanup step to remove test data after execution",
+      "Modify the test to handle existing Employee IDs gracefully"
+    ],
+    "_meta": {
+      "source": "openrouter",
+      "model": "openai/gpt-4o-mini",
+      "test_name": "test_add_employee"
+    }
+  },
+  {
+    "test_name": "test_directory_search",
+    "failure_reason": "Test execution failed due to a TimeoutException while waiting for an element to be clickable.",
+    "possible_issues": [
+      "Element is not present on the page",
+      "Element is present but not clickable due to overlay or other elements",
+      "Page took too long to load or stabilize"
+    ],
+    "what_to_check_first": [
+      "Verify the locator used for the search button",
+      "Check for any overlays or modals that may block the element",
+      "Ensure the page is fully loaded before the click action"
+    ],
+    "possible_fixes": [
+      "Increase the timeout duration for waiting for the element to be clickable",
+      "Add explicit waits or checks to ensure the element is interactable",
+      "Review the page structure to ensure the element is not being obscured"
+    ],
+    "_meta": {
+      "source": "openrouter",
+      "model": "openai/gpt-4o-mini",
+      "test_name": "test_directory_search"
+    }
+  },
+  {
+    "test_name": "test_candidates_search",
+    "failure_reason": "Test execution failed due to an exception raised during the search process indicating no records were found.",
+    "possible_issues": [
+      "Search criteria may be incorrect or too restrictive",
+      "Data may not exist in the database",
+      "Search functionality may be broken or not implemented correctly"
+    ],
+    "what_to_check_first": [
+      "Verify the search criteria used in the test",
+      "Check the database to ensure relevant records exist",
+      "Review the search functionality implementation for any issues"
+    ],
+    "possible_fixes": [
+      "Adjust the search criteria to match existing records",
+      "Populate the database with test data",
+      "Debug the search function to identify any underlying issues"
+    ],
+    "_meta": {
+      "source": "openrouter",
+      "model": "openai/gpt-4o-mini",
+      "test_name": "test_candidates_search"
+    }
+  },
+  {
+    "test_name": "test_claim",
+    "failure_reason": "Test failed due to a TimeoutException while waiting for an element to become visible.",
+    "possible_issues": [
+      "Element not present in the DOM",
+      "Element is hidden or not interactable",
+      "Incorrect locator used to find the element"
+    ],
+    "what_to_check_first": [
+      "Verify the locator used for the element",
+      "Check if the element is present on the page",
+      "Ensure the page has fully loaded before the element is accessed"
+    ],
+    "possible_fixes": [
+      "Increase the timeout duration for waiting for the element",
+      "Use a different locator strategy to find the element",
+      "Add explicit waits to ensure the element is interactable before performing actions"
+    ],
+    "_meta": {
+      "source": "openrouter",
+      "model": "openai/gpt-4o-mini",
+      "test_name": "test_claim"
+    }
+  }
+]
